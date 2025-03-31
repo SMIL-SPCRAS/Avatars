@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Audio-Visual Speech Recognition In-the-Wild: Multi-Angle Vehicle Cabin Dataset and Attention-Based Approach.">
+    <meta name="keywords" content="DAVIS, AVSR">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Avatars</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <link rel="icon" type="image/png" href="https://hci.nw.ru/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://hci.nw.ru/img/favicon/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="https://hci.nw.ru/img/favicon/favicon-228x228.png" sizes="228x228">
+    <link rel="shortcut icon" href="https://hci.nw.ru/img/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" href="https://hci.nw.ru/img/favicon/apple-touch-icon-57x57.png" sizes="52x57">
+    <link rel="apple-touch-icon" href="https://hci.nw.ru/img/favicon/apple-touch-icon-60x60.png" sizes="60x60">
+    <link rel="apple-touch-icon" href="https://hci.nw.ru/img/favicon/apple-touch-icon-72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="https://hci.nw.ru/img/favicon/apple-touch-icon-76x76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="https://hci.nw.ru/img/favicon/apple-touch-icon-114x114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="https://hci.nw.ru/img/favicon/apple-touch-icon-120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="https://hci.nw.ru/img/favicon/apple-touch-icon-144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="https://hci.nw.ru/img/favicon/apple-touch-icon-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="https://hci.nw.ru/img/favicon/apple-touch-icon-180x180.png" sizes="180x180">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/comp-slider.js" defer></script>
+    <script src="./static/js/index.js"></script>
+</head>
+<body>
+    <a id="btt-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+            <polygon points="12 6.586 3.293 15.293 4.707 16.707 12 9.414 19.293 16.707 20.707 15.293 12 6.586"/>
+        </svg>
+    </a>
+
+    <section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+                Аватары
+            </h1>
+            <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                <a href="https://hci.nw.ru/en/employees/3" target="_blank">Dmitry Ryumin</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <span class="author-block">
+                <a href="https://hci.nw.ru/en/employees/9" target="_blank">Alexandr Axyonov</a><sup>1</sup>,</span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup> <a href="https://spcras.ru" target="_blank">Федеральное государственное бюджетное учреждение науки
+                    «Санкт-Петербургский Федеральный исследовательский центр Российской академии наук» </a>, Санкт-Петербург, Россия</span>
+                <br />
+            </div>
+            <div class="column has-text-centered">
+                <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                    <a href="#"
+                    target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Статья (скоро)</span>
+                    </a>
+                </span>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+    <section class="section" style="padding: 0; margin:0">
+
+        <div class="TODO-section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-5">TODO List</h2>
+                        <div class="content has-text-justified">
+                            <svg viewBox="0 0 0 0" style="position: absolute; z-index: -1; opacity: 0;">
+                                <defs>
+                                    <path id="todo__line" stroke="#363636" d="M21 12.3h280v0.1z" ></path>
+                                    <path id="todo__box" stroke="#363636" d="M21 12.7v5c0 1.3-1 2.3-2.3 2.3H8.3C7 20 6 19 6 17.7V7.3C6 6 7 5 8.3 5h10.4C20 5 21 6 21 7.3v5.4"></path>
+                                    <path id="todo__check" stroke="#2b8f30" d="M10 13l2 2 5-5"></path>
+                                    <circle id="todo__circle" cx="13.5" cy="12.5" r="10"></circle>
+                                </defs>
+                            </svg>
+                            <div class="todo-list">
+
+                            <label class="todo">
+                                <input class="todo__state" type="checkbox" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 25" class="todo__icon">
+                                    <use xlink:href="#todo__line" class="todo__line"></use>
+                                    <use xlink:href="#todo__box" class="todo__box"></use>
+                                    <use xlink:href="#todo__check" class="todo__check"></use>
+                                    <use xlink:href="#todo__circle" class="todo__circle"></use>
+                                </svg>
+
+                                <div class="todo__text">Data collection</div>
+                            </label>
+
+                            <label class="todo">
+
+                                <input class="todo__state" type="checkbox" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 25" class="todo__icon">
+                                <use xlink:href="#todo__line" class="todo__line"></use>
+                                <use xlink:href="#todo__box" class="todo__box"></use>
+                                <use xlink:href="#todo__check" class="todo__check"></use>
+                                <use xlink:href="#todo__circle" class="todo__circle"></use>
+                                </svg>
+
+                                <div class="todo__text">Data labelling</div>
+
+                            </label>
+
+                            <label class="todo">
+                                <input class="todo__state" type="checkbox" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 25" class="todo__icon">
+                                <use xlink:href="#todo__line" class="todo__line"></use>
+                                <use xlink:href="#todo__box" class="todo__box"></use>
+                                <use xlink:href="#todo__check" class="todo__check"></use>
+                                <use xlink:href="#todo__circle" class="todo__circle"></use>
+                                </svg>
+
+                                <div class="todo__text">ICASSP 2024 paper submission</div>
+                            </label>
+
+                            <label class="todo">
+                                <input class="todo__state" type="checkbox" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 25" class="todo__icon">
+                                <use xlink:href="#todo__line" class="todo__line"></use>
+                                <use xlink:href="#todo__box" class="todo__box"></use>
+                                <use xlink:href="#todo__check" class="todo__check"></use>
+                                <use xlink:href="#todo__circle" class="todo__circle"></use>
+                                </svg>
+
+                                <div class="todo__text">GitHub page creation</div>
+                            </label>
+
+                            <label class="todo">
+                                <input class="todo__state" type="checkbox" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 25" class="todo__icon">
+                                <use xlink:href="#todo__line" class="todo__line"></use>
+                                <use xlink:href="#todo__box" class="todo__box"></use>
+                                <use xlink:href="#todo__check" class="todo__check"></use>
+                                <use xlink:href="#todo__circle" class="todo__circle"></use>
+                                </svg>
+
+                                <div class="todo__text">arXiv paper submission (coming soon)</div>
+                            </label>
+
+                            <label class="todo">
+                                <input class="todo__state" type="checkbox" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 25" class="todo__icon">
+                                <use xlink:href="#todo__line" class="todo__line"></use>
+                                <use xlink:href="#todo__box" class="todo__box"></use>
+                                <use xlink:href="#todo__check" class="todo__check"></use>
+                                <use xlink:href="#todo__circle" class="todo__circle"></use>
+                                </svg>
+
+                                <div class="todo__text">Release code and models (coming soon) </div>
+                            </label>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="abstract-section">
+            <div class="container is-max-desktop abstract-sect">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Abstract</h2>
+                        <div class="content has-text-justified">
+                            <p>
+                            In recent years, audio-visual speech recognition (AVSR) gains increasing attention as an important part of human-machine interaction. However, the publicly available corpora are limited and lack in-the-wild recordings, especially in driving conditions when acoustic signal is frequently corrupted by background noise. Research so far has been collected in constrained environments, and thus cannot reflect the true performance of AVSR systems in real-world scenarios. Often there are no data available for languages other than English. To meet the request for research on AVSR in unconstrained driving conditions, this paper presents a corpus collected ‘in-the-wild’. Along with this, we propose cross-modal attention method for robust multi-angle AVSR for vehicle conditions that leverages visual context to improve both: recognition accuracy and noise robustness. We compare the impact of different state-of-the-art methods on the AVSR system. Our proposed model achieves state-of-the-art results on AVSR with 98.65% accuracy in recognising driver voice commands.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="database-section">
+            <div class="container is-max-desktop">
+                <div class="database">
+                    <h2 class="title is-3">In-car Audio-Visual Speech Corpus</h2>
+
+                    <div class="table-container">
+                        <h2 class="title is-4">Corpus Parameters</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="centered">Parameter</th>
+                                    <th class="centered">Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Number of speakers</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>Amount of voice commands</td>
+                                    <td>62</td>
+                                </tr>
+                                <tr>
+                                    <td>Command repetitions by each speaker</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of annotated videos</td>
+                                    <td>≈ 22,350</td>
+                                </tr>
+                                <tr>
+                                    <td>Duration of audio-visual data</td>
+                                    <td>≈ 6 h 54 m</td>
+                                </tr>
+                                <tr>
+                                    <td>Clean speech percentage</td>
+                                    <td>95%</td>
+                                </tr>
+                                <tr>
+                                    <td>Video data format</td>
+                                    <td>mp4</td>
+                                </tr>
+                                <tr>
+                                    <td>Frame rate</td>
+                                    <td>60 FPS</td>
+                                </tr>
+                                <tr>
+                                    <td>Data volume</td>
+                                    <td>≈ 840 GB</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="method-section">
+            <div class="container is-max-desktop">
+                <div class="method">
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Method Overview</h2>
+                            <img class="img-method" src="./static/img/method.png" alt="method">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="architectures-section">
+            <div class="container is-max-desktop">
+                <div class="architectures">
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Neural Network Architectures </h2>
+                            <img class="img-method" src="./static/img/architectures.png" alt="method">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="results-section">
+            <div class="container is-max-desktop">
+                <div class="results">
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Evaluation Results</h2>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table class="res-table">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2" class="centered">#</th>
+                                    <th rowspan="2" class="centered second-th-col"> <p>Neural network model architecture</p></th>
+                                    <th colspan="2" class="centered">Accuracy, %</th>
+                                </tr>
+                                <tr>
+                                    <th class="centered">Val</th>
+                                    <th class="centered">Test</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="multicol">
+                                    <td colspan="4">VSR models</td>
+                                </tr>
+                                <tr>
+                                    <td class="centered">1</td>
+                                    <td>3DResNet18</td>
+                                    <td class="centered">86.53</td>
+                                    <td class="centered">76.74</td>
+                                </tr>
+                                <tr>
+                                    <td class="centered">2</td>
+                                    <td>3DResNet18 + SA</td>
+                                    <td class="centered">88.66</td>
+                                    <td class="centered">77.68</td>
+                                </tr>
+                                <tr>
+                                    <td class="centered">3</td>
+                                    <td>3DResNet18 + BiLSTM</td>
+                                    <td class="centered">82.94</td>
+                                    <td class="centered">75.89</td>
+                                </tr>
+                                <tr>
+                                    <td class="centered">4</td>
+                                    <td>3DResNet18 + SA + BiLSTM</td>
+                                    <td class="centered">85.55</td>
+                                    <td class="centered"><strong>83.46</strong></td>
+                                </tr>
+                                <tr class="multicol">
+                                    <td colspan="4">ASR models</td>
+                                </tr>
+                                <tr>
+                                    <td class="centered">5</td>
+                                    <td>2DResNet18</td>
+                                    <td class="centered">97.62</td>
+                                    <td class="centered">95.12</td>
+                                </tr>
+                                <tr>
+                                    <td class="centered">6</td>
+                                    <td>2DResNet18 + SA</td>
+                                    <td class="centered">97.90</td>
+                                    <td class="centered"><strong>95.61</strong></td>
+                                </tr>
+                                <tr class="multicol">
+                                    <td colspan="4">AVSR models</td>
+                                </tr>
+                                <tr>
+                                    <td class="centered">7</td>
+                                    <td>Concatenation-based fusion of 4 & 6</td>
+                                    <td class="centered">98.91</td>
+                                    <td class="centered">98.63</td>
+                                </tr>
+                                <tr>
+                                    <td class="centered">8</td>
+                                    <td>CMA-based fusion of 4 & 6</td>
+                                    <td class="centered">99.03</td>
+                                    <td class="centered"><strong>98.65</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cite-section">
+            <div class="container is-max-desktop">
+                <div class="cite">
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Cite this work</h2>
+                            <div class="content has-text-justified">
+                                <pre>
+@inproceedings {
+    axyonov2024audio,
+    title={Audio-Visual Speech Recognition In-The-Wild: Multi-Angle Vehicle Cabin Corpus and Attention-Based Method},
+    author={Axyonov, Alexandr and Ryumin, Dmitry and Ivanko, Denis and Kashevnik, Alexey and Karpov, Alexey},
+    booktitle={ICASSP 2024-2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+    pages={8195--8199},
+    year={2024},
+    organization={IEEE},
+    doi={10.1109/icassp48485.2024.10448048}
+}
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="related-section">
+            <div class="container is-max-desktop">
+                <div class="related">
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Our Related Works</h2>
+                            <div class="content has-text-justified">
+                                <ul>
+                                    <li><a href="https://ieeexplore.ieee.org/abstract/document/9909819">Visual Speech Recognition in a Driver Assistance System</a></li>
+                                    <li><a href="https://www.isca-speech.org/archive/interspeech_2022/ivanko22_interspeech.html">DAVIS: Driver’s Audio-Visual Speech Recognition</a></li>
+                                    <li><a href="https://www.mdpi.com/1424-8220/23/4/2284">Audio-Visual Speech and Gesture Recognition by Sensors of Mobile Devices</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+        <div class="content has-text-centered">
+            <a class="icon-link external-link" href="https://github.com/dmitryryumin" target="_blank">
+            <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-8">
+            <div class="content">
+                <p>
+                This page was built using the <a href="https://github.com/SMIL-SPCRAS/DAVIS" target="_blank">DAVIS project page</a>, which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5kew8sbyv6o&amp;m=7&amp;c=54ff00&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+</body>
+</html>
